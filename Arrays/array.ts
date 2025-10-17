@@ -34,3 +34,10 @@ console.log(double);
 // console.log(doubled);  // [2, 4, 6, 8]
 // console.log(numbers);  // [1, 2, 3, 4]  <-- original array is unchanged
 
+// number to string 
+
+let numbers:number[]= [1,2,3,4];
+
+let string:string[]= numbers.map((val) => val.toString() )
+
+console.log(string)

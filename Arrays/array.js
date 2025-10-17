@@ -16,3 +16,7 @@ console.log(double);
 // const doubled = numbers.map(val => val * 2);
 // console.log(doubled);  // [2, 4, 6, 8]
 // console.log(numbers);  // [1, 2, 3, 4]  <-- original array is unchanged
+// number to string 
+var numbers = [1, 2, 3, 4];
+var string = numbers.map(function (val) { return val.toString(); });
+console.log(string);
