@@ -20,3 +20,9 @@ console.log(double);
 var numbers = [1, 2, 3, 4];
 var string = numbers.map(function (val) { return val.toString(); });
 console.log(string);
+var avg = 0;
+var sum = numbers.map(function (num) {
+    return avg = avg + num;
+});
+avg = avg / numbers.length;
+console.log(avg);

@@ -41,3 +41,15 @@ let numbers:number[]= [1,2,3,4];
 let string:string[]= numbers.map((val) => val.toString() )
 
 console.log(string)
+
+let avg= 0;
+
+const sum:number[]= numbers.map((num) => 
+    avg= avg+num
+)
+
+avg= avg/numbers.length
+
+console.log(avg);
+
+
