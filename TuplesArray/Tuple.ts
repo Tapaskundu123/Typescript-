@@ -72,3 +72,56 @@ const [name, age] = getUser();
 console.log(name); // "Riya"
 console.log(age);  // 21
 
+
+// Destructuring Tuples
+// You can break up the structure of a tuple using destructuring.
+
+// Example
+
+
+let empTuple: [string, number, string] = ["Rohit Sharma", 25, "JavaTpoint"]; // tuple declaration
+
+// let [name, age] = empTuple;//destructuring name and age from the tuple
+// console.log(name);
+// console.log(age);
+// Output
+
+// Rohit Sharma
+// 25
+// ⚠️ Note:
+
+// If you tried to destructure more elements than exist, e.g. let [a, b, c, d] = empTuple;, TypeScript would not throw an error, but the extra variable(s) (d in this case) would be undefined.
+
+// Passing Tuples to Functions
+// Tuples can be passed as parameters to functions.
+
+// Example
+
+
+let emp1Tuple: [string, number, string] = ["GeeksforGeeks", 101, "Abhishek"];
+
+function display(tuple_values: any[]) {
+  for (let i = 0; i < tuple_values.length; i++) {
+    console.log(tuple_values[i]);
+  }
+}
+
+display(emp1Tuple);
+
+
+// example of a Tuple
+let studentTuple: [number, string, string, number, string, string] = [1, 'Aman', 'CSE', 2, 'Ram', 'CSE'];
+console.log(studentTuple);
+// Output
+
+// [1, 'Aman', 'CSE', 2, 'Ram', 'CSE']
+
+let emp2Tuple: readonly [string, number, string] = ["Rohit Sharma", 25, "JavaTpoint"];
+
+console.log(emp2Tuple)
+
+// Trying to change a value
+// empTuple[1] = 26; // ❌ Error: Index signature in type 'readonly [string, number, string]' only permits reading
+
+// Trying to push a new value
+// empTuple.push("Developer"); // ❌ Error: Property 'push' does not exist on type 'readonly [string, number, string]'
