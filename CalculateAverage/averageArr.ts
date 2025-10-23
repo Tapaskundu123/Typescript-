@@ -4,11 +4,11 @@ const AverageArr= (arr:[a:number,b:number, c:number, d:number]):number=>{
 
    let avg= 0;
     for(let i= 0; i<arr.length; i++){
-       avg= avg+ arr[i]
+       avg= avg + (arr[i] ?? 0)
     }
 
     avg= avg / arr.length ;
-    return avg;
+    return avg; 
 
 }
 

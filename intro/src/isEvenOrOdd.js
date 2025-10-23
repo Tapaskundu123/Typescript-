@@ -1,4 +1,6 @@
+"use strict";
 // function isEven(a:number):string{
+Object.defineProperty(exports, "__esModule", { value: true });
 //     if(a%2==0){
 //         return "even";
 //     }
@@ -19,4 +21,8 @@ function isDividedBy4And8(b, c) {
     return "not divided";
 }
 console.log(isDividedBy4And8(17, 32));
-
+let a = 5;
+a = "boy";
+a = true;
+console.log(a);
+//# sourceMappingURL=isEvenOrOdd.js.map

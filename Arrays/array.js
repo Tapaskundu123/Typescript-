@@ -1,12 +1,14 @@
+"use strict";
 // let mixed: (string | number | boolean)[] = [ 42,"hello", true,23]
+Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(mixed);
 // arr.map(callbackFn)
 // callbackFn parameters:
 // ts
 // Copy code
 // (element, index, array) => newValue
-var arr = [1, 2, 3, 4, 5];
-var double = arr.map(function (n) { return n * 2; });
+let arr = [1, 2, 3, 4, 5];
+const double = arr.map(n => n * 2);
 console.log(double);
 // const arr: number[] = [1, 2, 3, 4];
 // const result = arr.map((val) => val * 2);
@@ -17,12 +19,11 @@ console.log(double);
 // console.log(doubled);  // [2, 4, 6, 8]
 // console.log(numbers);  // [1, 2, 3, 4]  <-- original array is unchanged
 // number to string 
-var numbers = [1, 2, 3, 4];
-var string = numbers.map(function (val) { return val.toString(); });
+let numbers = [1, 2, 3, 4];
+let string = numbers.map((val) => val.toString());
 console.log(string);
-var avg = 0;
-var sum = numbers.map(function (num) {
-    return avg = avg + num;
-});
+let avg = 0;
+const sum = numbers.map((num) => avg = avg + num);
 avg = avg / numbers.length;
 console.log(avg);
+//# sourceMappingURL=array.js.map

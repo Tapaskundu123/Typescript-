@@ -1,13 +1,17 @@
-var user = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const user = {
     username: "Akshit Saxena",
     email: "akshit.saxena@geeksforgeeks.com",
     age: 24,
 };
 function greetUser(profile) {
-    return "Hello, ".concat(profile.username, "! \n    You are ").concat(profile.age, " years old. \n    Your email is ").concat(profile.email, ".");
+    return `Hello, ${profile.username}! 
+    You are ${profile.age} years old. 
+    Your email is ${profile.email}.`;
 }
 console.log(greetUser(user));
-var product1 = {
+const product1 = {
     name: "Laptop",
     price: 1000,
     quantity: 5
@@ -21,3 +25,4 @@ function TotalPrice(priceFromProduct) {
     return priceFromProduct.price * priceFromProduct.quantity;
 }
 console.log(TotalPrice(product1));
+//# sourceMappingURL=FunctionTypeAliases.js.map

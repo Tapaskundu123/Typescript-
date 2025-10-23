@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function processValue(input) {
     if (typeof input === "string") {
         return input.toUpperCase(); // returns string
@@ -17,19 +19,19 @@ console.log(processValue(10)); // 20
 // };
 // console.log(processValue("hello")); // HELLO
 // console.log(processValue(10));      // 20
-var findValue = function (input) {
+const findValue = (input) => {
     if (typeof input === "number") {
-        var dollar = '$';
-        var changeToStr = input.toString();
-        var ans = dollar + changeToStr;
+        let dollar = '$';
+        let changeToStr = input.toString();
+        let ans = dollar + changeToStr;
         return ans;
     }
     else if (typeof input === "boolean") {
         return true;
     }
     else if (typeof input === "string") {
-        var first = input.charAt(0).toUpperCase();
-        var rest = input.slice(1);
+        const first = input.charAt(0).toUpperCase();
+        const rest = input.slice(1);
         return first + rest;
     }
     return input;
@@ -37,3 +39,4 @@ var findValue = function (input) {
 console.log(findValue(5));
 console.log(findValue(true));
 console.log(findValue("hello"));
+//# sourceMappingURL=UnionTypeEg.js.map
